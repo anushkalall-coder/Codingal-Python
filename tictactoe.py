@@ -12,7 +12,7 @@ while True:
         m=int(input(f"{turn} move(1-9): "))
         if board[m]!=' ': continue
         board[m]=turn
-        if any(board[a]==board[b]==board[c]!='' for a,b,c in wins):
+        if any(board[a]==board[b]==board[c]!= 1' ' for a,b,c in wins):
             show(); print(turn, "wins"); break
         turn='O' if turn=='X' else 'X'
     else:
